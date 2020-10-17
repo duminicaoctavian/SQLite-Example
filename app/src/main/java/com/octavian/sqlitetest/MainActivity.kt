@@ -41,7 +41,7 @@ class MainActivity : AppCompatActivity() {
         query.use {
 //            if (it.moveToFirst()) {
             while (it.moveToNext()) {
-                with(query) {
+                with(it) {
                     val id = getLong(0)
                     val name = getString(1)
                     val phone = getInt(2)
